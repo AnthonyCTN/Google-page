@@ -1,7 +1,6 @@
 # Google-page
 page google pour me m'améliorer 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,16 +45,15 @@ page google pour me m'améliorer
         
             </ul>
         </header>
-        <div class="main">
-            <img src="google.png" alt="">
-            <div class="searchbox">
-                <form action="https://www.google.com/search" method="get">
-                <input type="text" class="search"  name="q" placeholder="  Rechercher sur Google ou saisir une URL">
-                <div class="icons">
-                    <div><img src="search.png" alt=""></div>
-                    <div><img src="mic.png" alt=""></div>
-                </div>
-                 </div>
+        <img class="im" src="google.png" alt="">
+        <div id="recherche">
+            <div class="loupe"> <img src="search.png" alt=""></div>
+
+            <input type="text" name="q" class="cherche" placeholder="Rechercher sur Google ou saisir une URL"> 
+            <form action="https://www.google.com/search" method="get">
+            <div class="micro"> <img src="mic.png" alt=""> </div>
+    
+        </div>
                  <div class="buttons">
 
                  </div>
@@ -102,6 +100,9 @@ page google pour me m'améliorer
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+body{
+  background-color: #3e4040;
+}
 section{
     position: relative;
     width: 100%;
@@ -135,34 +136,33 @@ section .main{
  
 } 
 
-section .main .searchbox{
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
 
-}
-section .main .searchbox .search{
-    width: 100%;
-    padding: 13px;
-    padding-left: 45px;
-    padding-right: 60px;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-size: 16px;
-}
 
-section .main .searchbox .icons{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display:flex;
-  padding: 12px 20px;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
+#recherche{
+    background-color: white;
+        width: 590px;
+        height: 50px;
+        position: absolute;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-}
+    .cherche{
+        width: 600px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .loupe, .micro{
+        width: 100px;
+        text-align: center;
+    }
 a {
     text-decoration: none;
     color: black;
@@ -241,7 +241,7 @@ a {
 }
 
 .image {
-  width: 30px; /* Ajustez la taille selon vos préférences */
+  width: 30px; 
   height: 30px;
   border-radius: 50%;
 }
@@ -304,6 +304,11 @@ a {
   position: absolute;
         top: 93%;
         right: 3px;
+}
+
+.im{
+  position: absolute;
+  top: 20%;
 }
 
 
