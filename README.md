@@ -1,6 +1,3 @@
-# Google-page
-page google pour me m'améliorer 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,9 +45,9 @@ page google pour me m'améliorer
         <img class="im" src="google.png" alt="">
         <div id="recherche">
             <div class="loupe"> <img src="search.png" alt=""></div>
-
+  <form action="https://www.google.com/search" method="get"></form>
             <input type="text" name="q" class="cherche" placeholder="Rechercher sur Google ou saisir une URL"> 
-            <form action="https://www.google.com/search" method="get">
+          
             <div class="micro"> <img src="mic.png" alt=""> </div>
     
         </div>
@@ -101,7 +98,7 @@ page google pour me m'améliorer
 
 }
 body{
-  background-color: #3e4040;
+  background-color: #f8f8ff;
 }
 section{
     position: relative;
